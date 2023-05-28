@@ -1,11 +1,16 @@
 
-<h2>Yo</h2>
+<h2>Chants pour diffusion</h2>
 
 <% Dir.glob("./textes/*.txt") do |file| %>
-  <%= file %>
-<form action="/change-text" method="post">
-  <input type="text" name="basename" value="<%= File.basename file %>">
-  <input type="submit" value="Diffuser">
-</form>
+  <div class="left">
+    <h2><%= File.basename(file) %></h2>
+    <%= File.read(file) %>
+  </div>
+  <div class="right">
+    <form action="/change-text" method="post">
+      <input type="hidden" name="basename" value="<%= File.basename file %>">
+      <input type="submit" value="Diffuser">
+    </form>
+  </div>
 <% end %>
 
