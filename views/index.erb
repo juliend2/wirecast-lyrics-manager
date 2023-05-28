@@ -1,0 +1,11 @@
+
+<h2>Yo</h2>
+
+<% Dir.glob("./textes/*.txt") do |file| %>
+  <%= file %>
+<form action="/change-text" method="post">
+  <input type="text" name="basename" value="<%= File.basename file %>">
+  <input type="submit" value="Diffuser">
+</form>
+<% end %>
+
