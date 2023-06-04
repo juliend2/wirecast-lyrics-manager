@@ -1,2 +1,2 @@
 all:
-	source /Users/wirecast/.bash_profile
+	. /Users/wirecast/.bash_profile
