@@ -1,8 +1,13 @@
 README
 
+# DEV
+
+- source $HOME/.bash_profile
+- bundle exec ruby config.ru
 
 # TODO
 
-- [ ] mettre ce repo sur github
+- [x] mettre ce repo sur github
 - [ ] rendre le fichier courant dynamique, et ignoré par git
-t
+- [ ] ajouter les chants
+
