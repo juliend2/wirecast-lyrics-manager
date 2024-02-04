@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # Example usage:
 #
 # ruby parse.xml 'la force'
@@ -40,7 +42,7 @@ XPath.each(xmldoc, "//source") do |source|
      if enc
        plain = Base64.decode64(enc)
        text = URI.decode(plain)
-       if text =~ /#{grep}/
+       if text.force_encoding("utf-8") =~ /#{grep}/u
          # on trouve le calque dans le calque, mais ca prend son parent
           puts titles[unique_id]
 #         puts source
