@@ -41,7 +41,7 @@ XPath.each(xmldoc, "//source") do |source|
      enc = json['text']
      if enc
        plain = Base64.decode64(enc)
-       text = URI.decode(plain)
+       text = URI.decode_www_form_component(plain)
        if text.force_encoding("utf-8") =~ /#{grep}/u
          # on trouve le calque dans le calque, mais ca prend son parent
           puts titles[unique_id]
