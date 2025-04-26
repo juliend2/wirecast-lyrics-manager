@@ -1,0 +1,52 @@
+<document unique_id="5AAF925C-03EC-46E2-8DB7-CFEF07E747E8" version="14" os="macosx" original_document_path="/Users/wirecast/Documents/Messe Dimanche May 2022.wcst">
+	<source_group_counters>
+		<group guid="F091FF4F-1F10-4203-8854-05F8B0414BC0" value="541"/>
+	</source_group_counters>
+	
+	<source_configurations>
+		<source factoryGUID="F091FF4F-1F10-4203-8854-05F8B0414BC0" manuallyAddedSource="1" template_instance_id="" prettyname="Kyrie eleison" unique_id="9E7D9520-2BCB-4559-86EC-F8A052DDF91E" localizedDisplayName="Texte" groupGUID="F091FF4F-1F10-4203-8854-05F8B0414BC0" localizedGroupingName="Texte" productionFlags="1" categories="16">
+			<xml_tag constrained_height="350" web_width="1000" web_height="350" widget_settings="{&quot;_renderer&quot;:{&quot;client_height&quot;:true,&quot;client_width&quot;:true,&quot;constrained_geometry&quot;:{&quot;height&quot;:true,&quot;width&quot;:true},&quot;height_constrained&quot;:true,&quot;width_constrained&quot;:true},&quot;align_items&quot;:&quot;center&quot;,&quot;colors&quot;:{&quot;backgroundColor&quot;:&quot;#00000066&quot;,&quot;listingColor&quot;:&quot;#FFFFFFFF&quot;,&quot;shadowColor&quot;:&quot;#000000FF&quot;},&quot;fastfileread&quot;:false,&quot;fontSelection&quot;:&quot;Georgia, serif&quot;,&quot;fontSize&quot;:&quot;En points&quot;,&quot;fontSizeInPoints&quot;:45,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontVariant&quot;:&quot;normal&quot;,&quot;fontWeight&quot;:400,&quot;gradientAngle&quot;:&quot;0.00&quot;,&quot;gradientEnabled&quot;:false,&quot;gradientType&quot;:0,&quot;justify_content&quot;:&quot;flex-start&quot;,&quot;linewrap&quot;:true,&quot;macSystemFontFace&quot;:&quot;Regular&quot;,&quot;macSystemFontTraits&quot;:0,&quot;macSystemFontWeight&quot;:5,&quot;rssUpdateFrequency&quot;:105,&quot;scrolling&quot;:{&quot;animation&quot;:&quot;NONE&quot;,&quot;autoreverse&quot;:false,&quot;direction&quot;:&quot;NATURAL&quot;,&quot;enabled&quot;:false,&quot;restartlive&quot;:true,&quot;speed&quot;:10},&quot;shadowBlur&quot;:&quot;3.08&quot;,&quot;shadowEnabled&quot;:true,&quot;shadowOffsetAngle&quot;:&quot;44.31&quot;,&quot;shadowOffsetRadius&quot;:&quot;3.23&quot;,&quot;social_message&quot;:&quot;ZXhlbXBsZSBkZSBtZXNzYWdl&quot;,&quot;social_name&quot;:&quot;ZXhlbXBsZSBkZSBub20=&quot;,&quot;solidEnabled&quot;:true,&quot;systemFont&quot;:&quot;Arial&quot;,&quot;text&quot;:&quot;S3lyaWUlMjBlbGVpc29uJTJDJTIwS3lyaWUlMjBlbGVpc29uJTJDJTIwS3lyaWUlMjBlbGVpc29uJTJDJTBEJTBBQ2hyaXN0ZSUyMGVsZWlzb24lMkMlMjBDaHJpc3RlJTIwZWxlaXNvbiUyQyUyMENocmlzdGUlMjBlbGVpc29uJTJDJTBEJTBBS3lyaWUlMjBlbGVpc29uJTJDJTIwS3lyaWUlMjBlbGVpc29uJTJDJTIwS3lyaWUlMjBlbGVpc29uJTBEJTBB&quot;,&quot;text_source&quot;:&quot;TEXT&quot;,&quot;transition&quot;:false,&quot;transition_id&quot;:&quot;NONE&quot;,&quot;transition_sec&quot;:0.0,&quot;webFontUrl&quot;:&quot;&quot;,&quot;wrap_option_id&quot;:&quot;WORD_WRAP&quot;}" unique_id="7E6A359E-3513-495E-B50F-A25A60E5F73D" title="Blackwhite Title Text 2" width_constrained="1" height_constrained="1" constrained_width="1000"/>
+		</source>
+	</source_configurations>
+	<assets>
+		<asset media-type="2" type="vaSourcesManager" url="vaSourcesManager::URL" unique_id="9E7D9520-2BCB-4559-86EC-F8A052DDF91E" name="Kyrie eleison" video_tracks="1" audio_tracks="0" video_scaling_preference="2" alpha_track_count="1" sourceGUID="F091FF4F-1F10-4203-8854-05F8B0414BC0" square_pixel_width="1000" square_pixel_height="350" raster_type="1380401729"/>
+		<asset name="Agneau veritable" unique_id="088DB9D1-7CDE-4086-BC27-06A57AC0B5F9" type="shot" media-type="9" audio_tracks="0" video_tracks="1" still_image_tracks="0" veil_track_count="0" alpha_track_count="0" sort_on_overlay="35" created_for_layer="2" sort_on_normal="12"/>
+		<asset media-type="2" type="vaSourcesManager" url="vaSourcesManager::URL" unique_id="9ECD5897-2ACE-483A-9C90-F77239641C42" name="Agneau veritable" video_tracks="1" audio_tracks="0" video_scaling_preference="2" alpha_track_count="1" sourceGUID="F091FF4F-1F10-4203-8854-05F8B0414BC0" square_pixel_width="1000" square_pixel_height="1000" raster_type="1380401729"/>
+		<asset name="Cam Link 4K Video" unique_id="127E95D5-52C7-4914-889B-9AF721F11776_shot" type="shot" media-type="9" audio_tracks="0" video_tracks="1" still_image_tracks="0" veil_track_count="0" alpha_track_count="0" created_for_layer="3"/>
+	</assets>
+	<chroma_key_configurations>
+		<chroma_key_configuration unique_id="7E6A359E-3513-495E-B50F-A25A60E5F73D" timestamp="9" ck_active="0" method="0" ck_key_cb="98.9007" ck_key_cr="91.2211" ck_key_cutoff="1.3" ck_edge_blend_active="1" ck_luma_clip_hi="0" ck_black_clip="0" ck_source_encoding="876229170" ck_source_encoding_width="0" ck_source_display="0" luma_white_min="200" luma_white_max="255" luma_black_min="0" luma_black_max="15" edge_coloring="0.15" spill_suppression="0.8" solidify="0.2" alpha_min="0" alpha_max="30" ck_source_user_color_value="0,0,0" chroma_config_id="3376"/>
+	</chroma_key_configurations>
+	<shots>
+		<shot event_type="2" unique_id="6CA8F8E4-F4BE-4B2B-98B6-DE285502B429_shot"/>
+		
+		<shot event_type="2" unique_id="5132C6FB-4F16-4DDF-BF89-0137992C9AD1_shot">
+			<event event_type="4" zorder="5">
+				<event event_type="2" channel_id="1" scaling_mode="131074" obj_pos="2.37083,-2.22814" unique_id="0F103A14-BCAD-479D-B040-2657FFBDFD18">
+					<event event_type="1" channel_id="1" ro_media_type="1986618479"/>
+				</event>
+			</event>
+			<event event_type="4" zorder="10" unique_id="one_quad">
+				<event event_type="2" channel_id="1" ro_user_scale="0.0782821,0.479639" scale_ratio="0.16321" obj_pos="3.11761,-1.65956" unique_id="B8027144-575F-478D-99B7-32A18CD49867_logo.png" scaling_mode="131073" obj_normcrop_lt="-1,-1" obj_normcrop_rb="1,1" layer_z_order="5" chroma_config_id="3404">
+					<event event_type="1" channel_id="1" ro_media_type="1986618479" action_flags="24" ro_playhead="0" action_time="7600000" action_duration="0"/>
+				</event>
+			</event>
+		</shot>
+		
+		<shot event_type="2" unique_id="A2893B0E-5912-4C6C-A610-97D13D930BB3">
+			<event event_type="4" zorder="5" unique_id="one_quad">
+				<event event_type="2" channel_id="1" scaling_mode="131074" obj_pos="-1.99173,-1.64303" drop_shadow_enabled="0" scale_ratio="1" obj_normcrop_rb="1,1" obj_normcrop_lt="-1,-1" unique_id="9E7D9520-2BCB-4559-86EC-F8A052DDF91E" ro_user_scale="0.759562,0.759562">
+					<event event_type="1" channel_id="1" ro_media_type="1986618479"/>
+				</event>
+			</event>
+		</shot>
+		
+		<shot event_type="2" unique_id="127E95D5-52C7-4914-889B-9AF721F11776_shot">
+			<event event_type="4" zorder="5" unique_id="one_quad">
+				<event event_type="2" channel_id="1" unique_id="avfoundation:0x11300000fd90066" interact_with_content="0" line_color="255,255,255">
+					<event event_type="1" channel_id="1" ro_media_type="1986618479"/>
+				</event>
+			</event>
+		</shot>
+	</shots>
+</document>

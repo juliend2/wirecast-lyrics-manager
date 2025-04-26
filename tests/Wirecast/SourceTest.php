@@ -7,11 +7,11 @@ use Lyrics\Wirecast\Source;
 use Lyrics\XmlParser;
 
 final class SourceTest extends TestCase {
-  
+
   public function testContent(): void {
     $xml = file_get_contents(__DIR__.'/../fixtures/source.xml');
     $parser = new XmlParser($xml);
-    $source = new Source($parser->getSourceTags()[0]);
+    $source = new Source($parser->getAllSourceTags()[0]);
     $this->assertStringContainsString(
       '1. De toi, Seigneur, nous attendons la vie',
       $source->getLyrics()
@@ -29,7 +29,7 @@ final class SourceTest extends TestCase {
       </document>
     XML;
     $parser = new XmlParser($xml);
-    $source = new Source($parser->getSourceTags()[0]);
+    $source = new Source($parser->getAllSourceTags()[0]);
     $this->assertEmpty($source->getLyrics());
   }
 }

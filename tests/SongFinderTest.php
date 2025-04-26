@@ -3,40 +3,16 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
+use Lyrics\SongFinder;
 use Lyrics\XmlParser;
 
-final class XmlParserTest extends TestCase {
-  public function testContent(): void {
-    $xml = file_get_contents(__DIR__.'/fixtures/source.xml');
-    $parser = new XmlParser($xml);
-    $this->assertNotEmpty($parser->getAllSourceTags());
-    $this->assertEquals(2, count($parser->getAllSourceTags()));
-  }
-
-  public function testTagWithEmptyContent(): void {
-    $xml = <<<XML
-      <document>
-        <source_configurations>
-          <source>
-            <xml_tag />
-          </source>
-        </source_configurations>
-      </document>
-    XML;
-    $parser = new XmlParser($xml);
-    $this->assertNotEmpty($parser->getAllSourceTags());
-  }
-
-  public function testNoSourceTag(): void {
-    $xml = <<<XML
-      <document>
-        <source_configurations>
-          <!-- No <source> tag -->
-        </source_configurations>
-      </document>
-    XML;
-    $parser = new XmlParser($xml);
-    $this->assertEmpty($parser->getAllSourceTags());
+final class SongFinderTest extends TestCase {
+  public function testFindingSong(): void {
+    $xml = file_get_contents(__DIR__.'/fixtures/tag_relationships.xml');
+    $xml_parser = new XmlParser($xml);
+    $song_finder = new SongFinder($xml_parser);
+    $song = $song_finder->findSongByLyrics('eleison')[0];
+    $this->assertEquals('Kyrie eleison', $song->getName());
   }
 
   public function testFindAssetByUniqueId(): void {

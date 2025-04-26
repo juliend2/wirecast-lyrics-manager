@@ -19,8 +19,25 @@ class XmlParser {
   /**
    * @return \DiDom\Element[]|\DiDom\DOMElement[]
    */
-  public function getSourceTags(): array {
+  public function getAllSourceTags(): array {
     return $this->getDocument()->find('source');
+  }
+
+  public function getAssetTags(): array {
+    return $this->getDocument()->find('asset');
+  }
+
+  public function getNameBySource(\Lyrics\Wirecast\Source $source): string {
+    return array_find($this->getAssetTags(), function ($asset) use ($source) {
+        return $asset->getAttribute('unique_id') == $source->getUniqueId();
+    })->getAttribute('name');
+  }
+
+  /**
+   * @return \DiDom\Element|\DiDom\DOMElement
+   */
+  public function getAssetByUniqueId(string $unique_id) {
+    return $this->getDocument()->find("asset[unique_id='$unique_id']")[0];
   }
 }
 

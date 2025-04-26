@@ -1,0 +1,29 @@
+# Top-level EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# PHP files
+[*.php]
+indent_style = space
+indent_size = 2
+
+# JSON, YAML, XML (common in PHP projects)
+[*.{json,yml,yaml,xml}]
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# Shell scripts, Makefiles
+[*.sh]
+indent_style = tab
