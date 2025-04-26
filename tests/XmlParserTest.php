@@ -10,14 +10,15 @@ final class XmlParserTest extends TestCase {
     $xml = file_get_contents(__DIR__.'/fixtures/source.xml');
     $parser = new XmlParser($xml);
     $this->assertNotEmpty($parser->getSourceTags());
+    $this->assertEquals(2, count($parser->getSourceTags()));
   }
 
-  public function testEmptyContent(): void {
+  public function testTagWithEmptyContent(): void {
     $xml = <<<XML
       <document>
         <source_configurations>
           <source>
-            <xml_tag widget_settings=""/>
+            <xml_tag />
           </source>
         </source_configurations>
       </document>
