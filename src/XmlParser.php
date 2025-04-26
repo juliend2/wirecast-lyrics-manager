@@ -3,19 +3,23 @@
 namespace Lyrics;
 
 use DiDom\Document;
-use DiDom\Query;
 
 class XmlParser {
-  protected $xml;
+  protected string $xml;
+
   public function __construct(string $document) {
     $this->xml = $document;
   }
-  public function getDocument() {
+  public function getDocument(): Document {
     $doc = new Document();
     $doc->loadXml($this->xml);
     return $doc;
   }
-  public function getSourceTags() {
+
+  /**
+   * @return \DiDom\Element[]|\DiDom\DOMElement[]
+   */
+  public function getSourceTags(): array {
     return $this->getDocument()->find('source');
   }
 }

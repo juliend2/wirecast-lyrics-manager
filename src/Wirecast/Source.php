@@ -4,7 +4,8 @@ namespace Lyrics\Wirecast;
 use DiDom\Element;
 
 class Source {
-  protected $node;
+  protected Element $node;
+  
   public function __construct(Element $node) {
     $this->node = $node;
   }
