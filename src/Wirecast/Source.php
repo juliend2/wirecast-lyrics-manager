@@ -1,8 +1,6 @@
 <?php
 
 namespace Lyrics\Wirecast;
-use DiDom\Document;
-use DiDom\Query;
 use DiDom\Element;
 
 class Source {

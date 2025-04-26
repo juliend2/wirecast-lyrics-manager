@@ -3,7 +3,6 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
-use Lyrics\Wirecast\Source;
 use Lyrics\XmlParser;
 
 final class XmlParserTest extends TestCase {
